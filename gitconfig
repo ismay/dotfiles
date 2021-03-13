@@ -6,7 +6,7 @@
   default = current
 
 [pull]
-	ff = only
+  ff = only
 
 [alias]
   a = add
