@@ -1,0 +1,76 @@
+# Github
+
+[Projects/github/ismay/stylelint-no-unsupported-browser-features]
+checkout = git clone 'git@github.com:ismay/stylelint-no-unsupported-browser-features.git' 'stylelint-no-unsupported-browser-features'
+
+# Go tooling
+
+[go/src/gitlab.com/ismay/average]
+checkout = git clone 'git@gitlab.com:ismay/average.git' 'average'
+
+# Gitlab
+
+[Projects/gitlab/ismay/bookmarks]
+checkout = git clone 'git@gitlab.com:ismay/bookmarks.git' 'bookmarks'
+
+[Projects/gitlab/ismay/deprecation-station]
+checkout = git clone 'git@gitlab.com:ismay/deprecation-station.git' 'deprecation-station'
+
+[Projects/gitlab/ismay/dotfiles]
+checkout = git clone 'git@gitlab.com:ismay/dotfiles.git' 'dotfiles'
+
+[Projects/gitlab/ismay/ismaywolff-nl]
+checkout = git clone 'git@gitlab.com:ismay/ismaywolff-nl.git' 'ismaywolff-nl'
+
+[Projects/gitlab/ismay/media]
+checkout = git clone 'git@gitlab.com:ismay/media.git' 'media'
+
+[Projects/gitlab/ismay/wolffsoftwareengineering-nl]
+checkout = git clone 'git@gitlab.com:ismay/wolffsoftwareengineering-nl.git' 'wolffsoftwareengineering-nl'
+
+# Vim plugins
+
+[.vim/pack/ismay/start/ale]
+checkout = git clone 'git@github.com:w0rp/ale.git' 'ale'
+
+[.vim/pack/ismay/start/auto-pairs]
+checkout = git clone 'git@github.com:jiangmiao/auto-pairs.git' 'auto-pairs'
+
+[.vim/pack/ismay/start/editorconfig-vim]
+checkout = git clone 'git@github.com:editorconfig/editorconfig-vim.git' 'editorconfig-vim'
+
+[.vim/pack/ismay/start/ferret]
+checkout = git clone 'git@github.com:wincent/ferret.git' 'ferret'
+
+[.vim/pack/ismay/start/nerdtree]
+checkout = git clone 'git@github.com:scrooloose/nerdtree.git' 'nerdtree'
+
+[.vim/pack/ismay/start/nerdtree-git-plugin]
+checkout = git clone 'git@github.com:Xuyuanp/nerdtree-git-plugin.git' 'nerdtree-git-plugin'
+
+[.vim/pack/ismay/start/qfenter]
+checkout = git clone 'git@github.com:yssl/QFEnter.git' 'qfenter'
+
+[.vim/pack/ismay/start/vim-closetag]
+checkout = git clone 'git@github.com:alvan/vim-closetag.git' 'vim-closetag'
+
+[.vim/pack/ismay/start/vim-commentary]
+checkout = git clone 'git@github.com:tpope/vim-commentary.git' 'vim-commentary'
+
+[.vim/pack/ismay/start/vim-gitgutter]
+checkout = git clone 'git@github.com:airblade/vim-gitgutter.git' 'vim-gitgutter'
+
+[.vim/pack/ismay/start/vim-mucomplete]
+checkout = git clone 'git@github.com:lifepillar/vim-mucomplete.git' 'vim-mucomplete'
+
+[.vim/pack/ismay/start/vim-polyglot]
+checkout = git clone 'git@github.com:sheerun/vim-polyglot.git' 'vim-polyglot'
+
+[.vim/pack/ismay/start/vim-repeat]
+checkout = git clone 'git@github.com:tpope/vim-repeat.git' 'vim-repeat'
+
+[.vim/pack/ismay/start/vim-replacewithregister]
+checkout = git clone 'git@github.com:inkarkat/vim-ReplaceWithRegister.git' 'vim-replacewithregister'
+
+[.vim/pack/ismay/start/vim-surround]
+checkout = git clone 'git@github.com:tpope/vim-surround.git' 'vim-surround'
