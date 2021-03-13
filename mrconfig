@@ -9,6 +9,12 @@ checkout = git clone 'git@github.com:ismay/dotfiles.git' 'dotfiles'
 [Projects/github/ismay/activity]
 checkout = git clone 'git@github.com:ismay/activity.git' 'activity'
 
+[Projects/github/ismay/superwolff.nl]
+checkout = git clone 'git@github.com:ismay/superwolff.nl.git' 'superwolff.nl'
+
+[Projects/github/ismay/wolffsoftwareengineering.nl]
+checkout = git clone 'git@github.com:ismay/wolffsoftwareengineering.nl.git' 'wolffsoftwareengineering.nl'
+
 # Go tooling
 
 [go/src/gitlab.com/ismay/average]
