@@ -3,6 +3,9 @@
 [Projects/github/ismay/stylelint-no-unsupported-browser-features]
 checkout = git clone 'git@github.com:ismay/stylelint-no-unsupported-browser-features.git' 'stylelint-no-unsupported-browser-features'
 
+[Projects/github/ismay/dotfiles]
+checkout = git clone 'git@github.com:ismay/dotfiles.git' 'dotfiles'
+
 # Go tooling
 
 [go/src/gitlab.com/ismay/average]
@@ -15,9 +18,6 @@ checkout = git clone 'git@gitlab.com:ismay/bookmarks.git' 'bookmarks'
 
 [Projects/gitlab/ismay/deprecation-station]
 checkout = git clone 'git@gitlab.com:ismay/deprecation-station.git' 'deprecation-station'
-
-[Projects/gitlab/ismay/dotfiles]
-checkout = git clone 'git@gitlab.com:ismay/dotfiles.git' 'dotfiles'
 
 [Projects/gitlab/ismay/ismaywolff-nl]
 checkout = git clone 'git@gitlab.com:ismay/ismaywolff-nl.git' 'ismaywolff-nl'
