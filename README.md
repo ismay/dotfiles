@@ -4,7 +4,7 @@
 
 - Generate a new ssh key: `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 - Add the ssh key to Github and Gitlab: `pbcopy < ~/.ssh/id_rsa.pub`
-- Clone this repo `git clone git@gitlab.com:ismay/dotfiles.git ~/.dotfiles`
+- Clone this repo `git clone git@github.com:ismay/dotfiles.git ~/.dotfiles`
 - Run `./install.sh`
 - Symlink dotfiles and build themes
 - Update repositories with `mr update`
