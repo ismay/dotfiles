@@ -205,9 +205,6 @@ nnoremap <leader>d :%d<CR>
 " copy all
 nnoremap <leader>y :%y<CR>
 
-" toggle goyo
-nnoremap <leader>g :Goyo<CR>
-
 " toggle wrapping
 nnoremap <leader>w :set wrap!<CR>
 
