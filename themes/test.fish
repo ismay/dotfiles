@@ -64,7 +64,7 @@ function print_xresources_colors --description "Convert xresources to kitty them
 end
 
 # Prints colors for all themes in the modified dir
-for theme_path in ./modified/*.xresources
+for theme_path in (status dirname)/modified/*.xresources
   set -l theme_contents (cat $theme_path)
   set -l theme_name (basename $theme_path .xresources)
 

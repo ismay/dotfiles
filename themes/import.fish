@@ -43,10 +43,10 @@ function kitty_to_xresources --description "Convert kitty to xresources theme"
     "*.color15:      #$col_15"
 end
 
-for theme_path in ./import/*.conf
+for theme_path in (status dirname)/import/*.conf
   set -l theme_contents (cat $theme_path)
   set -l theme_name (basename $theme_path .conf)
-  set -l theme_destination ./originals/{$theme_name}.xresources
+  set -l theme_destination (status dirname)/originals/{$theme_name}.xresources
 
   echo Importing $theme_name
 

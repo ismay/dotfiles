@@ -55,10 +55,10 @@ function xresources_to_kitty --description "Convert xresources to kitty theme"
     "bell_border_color #$col_fg"
 end
 
-for theme_path in ./modified/*.xresources
+for theme_path in (status dirname)/modified/*.xresources
   set -l theme_contents (cat $theme_path)
   set -l theme_name (basename $theme_path .xresources)
-  set -l theme_destination ./build/{$theme_name}.conf
+  set -l theme_destination (status dirname)/build/{$theme_name}.conf
 
   echo Building $theme_name
 
