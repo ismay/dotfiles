@@ -208,8 +208,8 @@ nnoremap <leader>y :%y<CR>
 " toggle wrapping
 nnoremap <leader>w :set wrap!<CR>
 
-" open/close nerdtree
-nnoremap <leader>n :NERDTreeToggle<CR>
+" open/close Fern
+nnoremap <leader>n :Fern . -drawer<CR>
 
 " fix file with available fixers
 nnoremap <leader>f :ALEFix<CR>
@@ -250,22 +250,12 @@ let g:ale_fixers={
   \ 'css': ['stylelint', 'prettier'],
   \ }
 
-" Nerdtree
-let NERDTreeHighlightCursorline=0	
-let NERDTreeMapActivateNode='l'	
-let NERDTreeMapCloseDir='h'	
-let NERDTreeMapOpenSplit='i'
-let NERDTreeMapOpenVSplit='s'
-let NERDTreeMinimalUI=1	
-let NERDTreeAutoDeleteBuffer=1	
-let NERDTreeShowLineNumbers=1
-
 " Mucomplete
 let g:mucomplete#chains={ 'default' : ['path', 'c-n', 'uspl', 'incl'] }
 let g:mucomplete#buffer_relative_paths=1
 let g:mucomplete#enable_auto_at_startup=1
 
-" QFEnter (same bindings as nerdtree and fzf)
+" QFEnter
 let g:qfenter_keymap = {}
 let g:qfenter_keymap.open = ['<CR>']
 let g:qfenter_keymap.vopen = ['s']
@@ -279,3 +269,6 @@ let g:gitgutter_sign_removed = '--'
 let g:gitgutter_sign_removed_first_line = '^^'
 let g:gitgutter_sign_modified_removed = 'c-'
 let g:gitgutter_grep = 'rg'
+
+" Fern
+let g:fern#renderer = 'nerdfont'

@@ -51,12 +51,6 @@ checkout = git clone 'git@github.com:editorconfig/editorconfig-vim.git' 'editorc
 [.vim/pack/ismay/start/ferret]
 checkout = git clone 'git@github.com:wincent/ferret.git' 'ferret'
 
-[.vim/pack/ismay/start/nerdtree]
-checkout = git clone 'git@github.com:scrooloose/nerdtree.git' 'nerdtree'
-
-[.vim/pack/ismay/start/nerdtree-git-plugin]
-checkout = git clone 'git@github.com:Xuyuanp/nerdtree-git-plugin.git' 'nerdtree-git-plugin'
-
 [.vim/pack/ismay/start/qfenter]
 checkout = git clone 'git@github.com:yssl/QFEnter.git' 'qfenter'
 
@@ -83,3 +77,15 @@ checkout = git clone 'git@github.com:inkarkat/vim-ReplaceWithRegister.git' 'vim-
 
 [.vim/pack/ismay/start/vim-surround]
 checkout = git clone 'git@github.com:tpope/vim-surround.git' 'vim-surround'
+
+[.vim/pack/ismay/start/fern.vim]
+checkout = git clone 'git@github.com:lambdalisue/fern.vim.git' 'fern.vim'
+
+[.vim/pack/ismay/start/fern-git-status.vim]
+checkout = git clone 'git@github.com:lambdalisue/fern-git-status.vim.git' 'fern-git-status.vim'
+
+[.vim/pack/ismay/start/fern-renderer-nerdfont.vim]
+checkout = git clone 'git@github.com:lambdalisue/fern-renderer-nerdfont.vim.git' 'fern-renderer-nerdfont.vim'
+
+[.vim/pack/ismay/start/nerdfont.vim]
+checkout = git clone 'git@github.com:lambdalisue/nerdfont.vim.git' 'nerdfont.vim'
