@@ -28,9 +28,6 @@ checkout = git clone 'git@gitlab.com:ismay/bookmarks.git' 'bookmarks'
 [Projects/gitlab/ismay/deprecation-station]
 checkout = git clone 'git@gitlab.com:ismay/deprecation-station.git' 'deprecation-station'
 
-[Projects/gitlab/ismay/ismaywolff-nl]
-checkout = git clone 'git@gitlab.com:ismay/ismaywolff-nl.git' 'ismaywolff-nl'
-
 [Projects/gitlab/ismay/media]
 checkout = git clone 'git@gitlab.com:ismay/media.git' 'media'
 
