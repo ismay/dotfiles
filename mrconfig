@@ -31,9 +31,6 @@ checkout = git clone 'git@gitlab.com:ismay/deprecation-station.git' 'deprecation
 [Projects/gitlab/ismay/media]
 checkout = git clone 'git@gitlab.com:ismay/media.git' 'media'
 
-[Projects/gitlab/ismay/wolffsoftwareengineering-nl]
-checkout = git clone 'git@gitlab.com:ismay/wolffsoftwareengineering-nl.git' 'wolffsoftwareengineering-nl'
-
 # Vim plugins
 
 [.vim/pack/ismay/start/ale]
