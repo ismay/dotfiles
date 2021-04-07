@@ -26,12 +26,13 @@ set -a -x PATH "$HOME/go/bin"
 # ##################################################################################################
 
 # super-short shortcuts
-alias v="vim"
-alias g="git"
 alias c="clear"
 alias d="cd ~/.dotfiles"
-alias p="cd ~/Projects"
+alias f="fnm"
+alias g="git"
 alias n="npm"
+alias p="cd ~/Projects"
+alias v="vim"
 alias y="yarn"
 
 # symlink dotfiles (ignores anything passed with -x, symlinks dirs specified with -S directly)
