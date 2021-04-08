@@ -1,5 +1,3 @@
-#!/usr/bin/env fish
-
 # colorscheme (https://github.com/junegunn/fzf/wiki/Color-schemes#color-configuration)
 set -x FZF_DEFAULT_OPTS "
   --color fg:-1

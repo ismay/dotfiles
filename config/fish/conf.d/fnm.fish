@@ -1,3 +1,1 @@
-#!/usr/bin/env fish
-
-fnm env | source
+fnm env --shell=fish | source
