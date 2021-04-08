@@ -49,32 +49,6 @@ alias ll="exa -lh --group-directories-first"
 alias la="exa -lh --group-directories-first -a"
 
 # ##################################################################################################
-# Fzf 
-# ##################################################################################################
-
-# colorscheme (https://github.com/junegunn/fzf/wiki/Color-schemes#color-configuration)
-set -x FZF_DEFAULT_OPTS "
-  --color fg:-1
-  --color bg:-1
-  --color hl:-1
-  --color fg+:-1
-  --color bg+:-1
-  --color hl+:-1
-  --color info:8
-  --color prompt:11
-  --color pointer:1
-  --color marker:-1
-  --color spinner:-1
-  --color header:-1
-"
-
-# set command for fzf in vim
-set -x FZF_DEFAULT_COMMAND 'fd --type f --color=never'
-
-# bind fuzzy file/directory insertion to ctrl-t
-bind \ct fzf_insert
-
-# ##################################################################################################
 # Set fish colors
 # ##################################################################################################
 
@@ -103,24 +77,3 @@ set -x fish_pager_color_completion normal
 set -x fish_pager_color_description yellow
 set -x fish_pager_color_progress brwhite --background=cyan
 set -x fish_color_history_current --bold
-
-# ##################################################################################################
-# Initialize zoxide
-# ##################################################################################################
-
-zoxide init fish | source
-
-# ##################################################################################################
-# Initialize fnm
-# ##################################################################################################
-
-fnm env | source
-
-# ##################################################################################################
-# Initialize starship prompt
-# ##################################################################################################
-
-# Set custom config dir
-set -x STARSHIP_CONFIG "$HOME/.config/starship/starship.toml"
-
-starship init fish | source
