@@ -6,10 +6,8 @@
 - Add the ssh key to Github and Gitlab: `pbcopy < ~/.ssh/id_rsa.pub`
 - Clone this repo `git clone git@github.com:ismay/dotfiles.git ~/.dotfiles`
 - Run `./install.sh`
-- Symlink dotfiles and build themes
+- Symlink dotfiles and build themes with `rcup rcrc && rcup`
 - Update repositories with `mr update`
-- Configure mac keyboard to use capslock as ctrl, and change mission control ctrl-left and ctrl-right shortcuts
-- Sign into Firefox Sync and restore addons
 
 ## useful links
 
