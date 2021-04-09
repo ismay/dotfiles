@@ -272,6 +272,8 @@ let g:gitgutter_grep = 'rg'
 
 " Fern
 let g:fern#renderer = 'nerdfont'
-
 " Set nerdfont icon colors automatically
 autocmd FileType fern call glyph_palette#apply()
+
+" Indentline
+let g:indentLine_char = '|'

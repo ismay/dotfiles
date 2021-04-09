@@ -86,3 +86,6 @@ checkout = git clone 'git@github.com:lambdalisue/nerdfont.vim.git' 'nerdfont.vim
 
 [.vim/pack/ismay/start/glyph-palette.vim]
 checkout = git clone 'git@github.com:lambdalisue/glyph-palette.vim.git' 'glyph-palette.vim'
+
+[.vim/pack/ismay/start/indentLine]
+checkout = git clone 'git@github.com:Yggdroot/indentLine.git' 'indentLine'
