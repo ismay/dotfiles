@@ -214,6 +214,9 @@ nnoremap <leader>n :Fern . -drawer -toggle<CR>
 " fix file with available fixers
 nnoremap <leader>f :ALEFix<CR>
 
+" toggle indentline
+nnoremap <leader>i :IndentLinesToggle<CR>
+
 " find files by filename fuzzily with fzf
 nnoremap <C-f> :FZF<CR>
 
