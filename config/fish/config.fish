@@ -35,12 +35,6 @@ alias p="cd ~/Projects"
 alias v="vim"
 alias y="yarn"
 
-# symlink dotfiles (ignores anything passed with -x, symlinks dirs specified with -S directly)
-alias dotsup="rcup -v -x README.md -x install.sh -x themes"
-
-# dry run for symlinking dotfiles
-alias dotsls="lsrc -v -x README.md -x install.sh -x themes"
-
 # serve local directory
 alias serve="python -m SimpleHTTPServer 8000"
 
