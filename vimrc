@@ -187,9 +187,6 @@ noremap <down> <C-w>5-
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
 
-" reload vim config
-nnoremap <leader>q :source $MYVIMRC<CR>
-
 " super star without going to the next match
 nnoremap <silent> <Leader>* :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
 
@@ -199,9 +196,6 @@ nnoremap <leader>c :nohlsearch<CR>
 " select all
 nnoremap <leader>v ggVG
 
-" delete all
-nnoremap <leader>d :%d<CR>
-
 " copy all
 nnoremap <leader>y :%y<CR>
 
@@ -209,13 +203,12 @@ nnoremap <leader>y :%y<CR>
 nnoremap <leader>w :set wrap!<CR>
 
 " open/close Fern
-nnoremap <leader>n :Fern . -drawer -toggle<CR>
+nnoremap <leader>d :Fern . -drawer -width=35 -toggle<CR><C-w>=
+noremap <Leader>f :Fern . -drawer -reveal=% -width=35<CR><C-w>=
+noremap <Leader>. :Fern %:h -drawer -width=35<CR><C-w>=
 
 " fix file with available fixers
-nnoremap <leader>f :ALEFix<CR>
-
-" toggle indentline
-nnoremap <leader>i :IndentLinesToggle<CR>
+nnoremap <leader>x :ALEFix<CR>
 
 " find files by filename fuzzily with fzf
 nnoremap <C-f> :FZF<CR>
@@ -229,8 +222,8 @@ nnoremap Y yg_
 
 " Fzf
 let g:fzf_action={
-  \ 'ctrl-i': 'split',
-  \ 'ctrl-s': 'vsplit' }
+  \ 'ctrl-s': 'split',
+  \ 'ctrl-v': 'vsplit' }
 let g:fzf_layout={ 'down': '~20%' }
 
 " Closetag
@@ -246,12 +239,19 @@ let g:ale_set_highlights=0
 let g:ale_sign_column_always=1
 let g:ale_sign_error='>>'
 let g:ale_sign_warning='--'
-let g:ale_fixers={
-  \ 'javascript': ['eslint', 'prettier'],
-  \ 'javascriptreact': ['eslint', 'prettier'],
-  \ 'go': ['gofmt'],
-  \ 'css': ['stylelint', 'prettier'],
-  \ }
+let g:ale_fixers = {
+\ 'css': ['stylelint', 'prettier'],
+\ 'javascript': ['eslint', 'prettier'],
+\ 'javascriptreact': ['eslint', 'prettier'],
+\ 'json': ['prettier'],
+\ 'yml': ['prettier'],
+\ 'go': ['gofmt'],
+\}
+let g:ale_linters = {
+\ 'css': ['stylelint'],
+\ 'javascript': ['eslint'],
+\ 'javascriptreact': ['eslint'],
+\}
 
 " Mucomplete
 let g:mucomplete#chains={ 'default' : ['path', 'c-n', 'uspl', 'incl'] }
@@ -261,8 +261,8 @@ let g:mucomplete#enable_auto_at_startup=1
 " QFEnter
 let g:qfenter_keymap = {}
 let g:qfenter_keymap.open = ['<CR>']
-let g:qfenter_keymap.vopen = ['s']
-let g:qfenter_keymap.hopen = ['i']
+let g:qfenter_keymap.vopen = ['v']
+let g:qfenter_keymap.hopen = ['s']
 
 " Gitgutter
 let g:gitgutter_override_sign_column_highlight = 0
@@ -275,8 +275,48 @@ let g:gitgutter_grep = 'rg'
 
 " Fern
 let g:fern#renderer = 'nerdfont'
-" Set nerdfont icon colors automatically
-autocmd FileType fern call glyph_palette#apply()
+let g:fern#disable_default_mappings = 1
+let g:fern#disable_drawer_auto_quit = 1
+let g:fern#disable_viewer_hide_cursor = 1
 
 " Indentline
 let g:indentLine_char = '|'
+
+" Clever-f
+let g:clever_f_across_no_line = 1
+let g:clever_f_fix_key_direction = 1
+
+" ==================================================================================================
+" Fern settings
+" ==================================================================================================
+
+function! s:init_fern() abort
+  nmap <buffer><expr>
+        \ <Plug>(fern-my-open-expand-collapse)
+        \ fern#smart#leaf(
+        \   "\<Plug>(fern-action-open:select)",
+        \   "\<Plug>(fern-action-expand)",
+        \   "\<Plug>(fern-action-collapse)",
+        \ )
+  nmap <buffer> <CR> <Plug>(fern-my-open-expand-collapse)
+  nmap <buffer> <2-LeftMouse> <Plug>(fern-my-open-expand-collapse)
+  nmap <buffer> m <Plug>(fern-action-mark:toggle)j
+  nmap <buffer> N <Plug>(fern-action-new-file)
+  nmap <buffer> K <Plug>(fern-action-new-dir)
+  nmap <buffer> D <Plug>(fern-action-remove)
+  nmap <buffer> V <Plug>(fern-action-move)
+  nmap <buffer> R <Plug>(fern-action-rename)
+  nmap <buffer> s <Plug>(fern-action-open:split)
+  nmap <buffer> v <Plug>(fern-action-open:vsplit)
+  nmap <buffer> r <Plug>(fern-action-reload)
+  nmap <buffer> <nowait> d <Plug>(fern-action-hidden:toggle)
+  nmap <buffer> <nowait> < <Plug>(fern-action-leave)
+  nmap <buffer> <nowait> > <Plug>(fern-action-enter)
+endfunction
+
+augroup fern-custom
+  autocmd! *
+  " Set nerdfont icon colors automatically
+  autocmd FileType fern call glyph_palette#apply()
+  autocmd FileType fern call s:init_fern()
+augroup END

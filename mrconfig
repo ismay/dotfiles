@@ -89,3 +89,6 @@ checkout = git clone 'git@github.com:lambdalisue/glyph-palette.vim.git' 'glyph-p
 
 [.vim/pack/ismay/start/indentLine]
 checkout = git clone 'git@github.com:Yggdroot/indentLine.git' 'indentLine'
+
+[.vim/pack/ismay/start/clever-f.vim]
+checkout = git clone 'git@github.com:rhysd/clever-f.vim.git' 'clever-f.vim'
