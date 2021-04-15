@@ -282,7 +282,7 @@ function! s:init_fern() abort
   nmap <buffer><expr>
         \ <Plug>(fern-my-open-expand-collapse)
         \ fern#smart#leaf(
-        \   "\<Plug>(fern-action-open:select)",
+        \   "\<Plug>(fern-action-open:select) <Plug>(fern-close-drawer)",
         \   "\<Plug>(fern-action-expand)",
         \   "\<Plug>(fern-action-collapse)",
         \ )
@@ -302,6 +302,8 @@ function! s:init_fern() abort
   nmap <buffer> <nowait> < <Plug>(fern-action-leave)
   nmap <buffer> <nowait> > <Plug>(fern-action-enter)
 endfunction
+
+nnoremap <Plug>(fern-close-drawer) :<C-u>FernDo close -drawer -stay<CR>
 
 augroup fern-custom
   autocmd! *
