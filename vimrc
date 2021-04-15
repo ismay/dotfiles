@@ -203,9 +203,9 @@ nnoremap <leader>y :%y<CR>
 nnoremap <leader>w :set wrap!<CR>
 
 " open/close Fern
-nnoremap <leader>d :Fern . -drawer -width=35 -toggle<CR><C-w>=
-noremap <Leader>f :Fern . -drawer -reveal=% -width=35<CR><C-w>=
-noremap <Leader>. :Fern %:h -drawer -width=35<CR><C-w>=
+nnoremap <leader>d :Fern . -drawer -toggle<CR><C-w>=
+noremap <Leader>f :Fern . -drawer -reveal=%<CR><C-w>=
+noremap <Leader>. :Fern %:h -drawer<CR><C-w>=
 
 " fix file with available fixers
 nnoremap <leader>x :ALEFix<CR>
@@ -225,14 +225,6 @@ let g:fzf_action={
   \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit' }
 let g:fzf_layout={ 'down': '~20%' }
-
-" Closetag
-let g:closetag_filenames='*.html,*.njk,*.js,*.jsx'
-let g:closetag_regions={
-    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
-    \ 'javascript.jsx': 'jsxRegion',
-    \ }
-let g:closetag_shortcut='>'
 
 " Ale
 let g:ale_set_highlights=0
@@ -258,12 +250,6 @@ let g:mucomplete#chains={ 'default' : ['path', 'c-n', 'uspl', 'incl'] }
 let g:mucomplete#buffer_relative_paths=1
 let g:mucomplete#enable_auto_at_startup=1
 
-" QFEnter
-let g:qfenter_keymap = {}
-let g:qfenter_keymap.open = ['<CR>']
-let g:qfenter_keymap.vopen = ['v']
-let g:qfenter_keymap.hopen = ['s']
-
 " Gitgutter
 let g:gitgutter_override_sign_column_highlight = 0
 let g:gitgutter_sign_added = '++'
@@ -273,12 +259,6 @@ let g:gitgutter_sign_removed_first_line = '^^'
 let g:gitgutter_sign_modified_removed = 'c-'
 let g:gitgutter_grep = 'rg'
 
-" Fern
-let g:fern#renderer = 'nerdfont'
-let g:fern#disable_default_mappings = 1
-let g:fern#disable_drawer_auto_quit = 1
-let g:fern#disable_viewer_hide_cursor = 1
-
 " Indentline
 let g:indentLine_char = '|'
 
@@ -286,9 +266,17 @@ let g:indentLine_char = '|'
 let g:clever_f_across_no_line = 1
 let g:clever_f_fix_key_direction = 1
 
+"Vim ripgrep
+let g:rg_command = 'rg --vimgrep -S'
+
 " ==================================================================================================
 " Fern settings
 " ==================================================================================================
+
+let g:fern#renderer = 'nerdfont'
+let g:fern#disable_default_mappings = 1
+let g:fern#disable_drawer_auto_quit = 1
+let g:fern#drawer_width = 35
 
 function! s:init_fern() abort
   nmap <buffer><expr>
@@ -298,9 +286,10 @@ function! s:init_fern() abort
         \   "\<Plug>(fern-action-expand)",
         \   "\<Plug>(fern-action-collapse)",
         \ )
-  nmap <buffer> <CR> <Plug>(fern-my-open-expand-collapse)
+  nmap <buffer> l <Plug>(fern-my-open-expand-collapse)
   nmap <buffer> <2-LeftMouse> <Plug>(fern-my-open-expand-collapse)
-  nmap <buffer> m <Plug>(fern-action-mark:toggle)j
+  nmap <buffer> h <Plug>(fern-action-collapse)
+  nmap <buffer> m <Plug>(fern-action-mark:toggle)
   nmap <buffer> N <Plug>(fern-action-new-file)
   nmap <buffer> K <Plug>(fern-action-new-dir)
   nmap <buffer> D <Plug>(fern-action-remove)

@@ -21,14 +21,6 @@
 - Theme builder: https://terminal.sexy
 - Shell: https://fishshell.com
 
-## node
-
-If you're getting a [node version mismatch warning from nodenv](https://github.com/nodenv/nodenv/issues/108), run the following:
-
-```
-npm config set scripts-prepend-node-path auto
-```
-
 ## xcode
 
 If any node modules have trouble building because they can't find xcode, follow the instructions [here](https://github.com/nodejs/node-gyp/blob/master/macOS_Catalina.md#installation-notes-for-macos-catalina-v1015).

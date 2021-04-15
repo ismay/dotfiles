@@ -8,11 +8,8 @@ set fish_greeting
 # Base environment vars
 # ##################################################################################################
 
-# Preferred editor
 set -x EDITOR "vim"
 set -x GIT_EDITOR "vim"
-
-# Set locale
 set -x LC_ALL "en_US.UTF-8"
 
 # ##################################################################################################

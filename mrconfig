@@ -36,20 +36,8 @@ checkout = git clone 'git@gitlab.com:ismay/media.git' 'media'
 [.vim/pack/ismay/start/ale]
 checkout = git clone 'git@github.com:w0rp/ale.git' 'ale'
 
-[.vim/pack/ismay/start/auto-pairs]
-checkout = git clone 'git@github.com:jiangmiao/auto-pairs.git' 'auto-pairs'
-
 [.vim/pack/ismay/start/editorconfig-vim]
 checkout = git clone 'git@github.com:editorconfig/editorconfig-vim.git' 'editorconfig-vim'
-
-[.vim/pack/ismay/start/ferret]
-checkout = git clone 'git@github.com:wincent/ferret.git' 'ferret'
-
-[.vim/pack/ismay/start/qfenter]
-checkout = git clone 'git@github.com:yssl/QFEnter.git' 'qfenter'
-
-[.vim/pack/ismay/start/vim-closetag]
-checkout = git clone 'git@github.com:alvan/vim-closetag.git' 'vim-closetag'
 
 [.vim/pack/ismay/start/vim-commentary]
 checkout = git clone 'git@github.com:tpope/vim-commentary.git' 'vim-commentary'
@@ -92,3 +80,9 @@ checkout = git clone 'git@github.com:Yggdroot/indentLine.git' 'indentLine'
 
 [.vim/pack/ismay/start/clever-f.vim]
 checkout = git clone 'git@github.com:rhysd/clever-f.vim.git' 'clever-f.vim'
+
+[.vim/pack/ismay/start/vim-ripgrep]
+checkout = git clone 'git@github.com:jremmen/vim-ripgrep.git' 'vim-ripgrep'
+
+[.vim/pack/ismay/start/quickfix-reflector.vim]
+checkout = git clone 'git@github.com:stefandtw/quickfix-reflector.vim.git' 'quickfix-reflector.vim'
