@@ -269,6 +269,9 @@ let g:clever_f_fix_key_direction = 1
 "Vim ripgrep
 let g:rg_command = 'rg --vimgrep --smart-case --fixed-strings'
 
+"Cheat 40
+let g:cheat40_use_default = 0
+
 " ==================================================================================================
 " Fern settings
 " ==================================================================================================

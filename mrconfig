@@ -86,3 +86,6 @@ checkout = git clone 'git@github.com:jremmen/vim-ripgrep.git' 'vim-ripgrep'
 
 [.vim/pack/ismay/start/quickfix-reflector.vim]
 checkout = git clone 'git@github.com:stefandtw/quickfix-reflector.vim.git' 'quickfix-reflector.vim'
+
+[.vim/pack/ismay/start/vim-cheat40]
+checkout = git clone 'git@github.com:lifepillar/vim-cheat40.git' 'vim-cheat40'
