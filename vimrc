@@ -309,3 +309,31 @@ augroup fern-custom
   autocmd FileType fern call glyph_palette#apply()
   autocmd FileType fern call s:init_fern()
 augroup END
+
+" ==================================================================================================
+" Statusline https://www.tdaly.co.uk/projects/vim-statusline-generator
+" ==================================================================================================
+
+set statusline=
+set statusline+=\ \ 
+
+" file name
+set statusline+=%f
+set statusline+=\ 
+
+" modified flag
+set statusline+=%{&modified?'':''}
+
+" right align from here on
+set statusline+=%=
+
+" current line and column
+set statusline+=\ \ \ 
+set statusline+=%l
+set statusline+=:
+set statusline+=%c
+
+" current percentage of file
+set statusline+=\ \ \ 
+set statusline+=%p%%
+set statusline+=\ 
