@@ -1,5 +1,7 @@
 # dotfiles
 
+![screenshot](https://user-images.githubusercontent.com/7355199/115064914-c7b68f00-9eed-11eb-8c99-a359c246bb92.png)
+
 ## installation
 
 - Generate a new ssh key: `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
