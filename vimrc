@@ -266,7 +266,7 @@ let g:indentLine_char = '|'
 let g:clever_f_across_no_line = 1
 let g:clever_f_fix_key_direction = 1
 
-"Vim ripgrep
+" Ripgrep
 let g:rg_command = 'rg --vimgrep --smart-case --fixed-strings'
 
 "Cheat 40
@@ -290,11 +290,11 @@ function! s:init_fern() abort
         \   "\<Plug>(fern-action-collapse)",
         \ )
   nmap <buffer> l <Plug>(fern-my-open-expand-collapse)
-  nmap <buffer> <2-LeftMouse> <Plug>(fern-my-open-expand-collapse)
   nmap <buffer> h <Plug>(fern-action-collapse)
   nmap <buffer> m <Plug>(fern-action-mark:toggle)
   nmap <buffer> n <Plug>(fern-action-new-file)
   nmap <buffer> f <Plug>(fern-action-new-dir)
+  nmap <buffer> R <Plug>(fern-action-rename)
   nmap <buffer> D <Plug>(fern-action-remove)
   nmap <buffer> x <Plug>(fern-action-move)
   nmap <buffer> c <Plug>(fern-action-copy)
