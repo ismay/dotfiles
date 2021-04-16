@@ -275,7 +275,7 @@ let g:rg_command = 'rg --vimgrep --smart-case --fixed-strings'
 
 let g:fern#renderer = 'nerdfont'
 let g:fern#disable_default_mappings = 1
-let g:fern#disable_drawer_auto_quit = 1
+let g:fern#disable_drawer_smart_quit = 1
 let g:fern#drawer_width = 35
 
 function! s:init_fern() abort
