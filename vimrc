@@ -295,6 +295,7 @@ function! s:init_fern() abort
   nmap <buffer> D <Plug>(fern-action-remove)
   nmap <buffer> V <Plug>(fern-action-move)
   nmap <buffer> R <Plug>(fern-action-rename)
+  nmap <buffer> c <Plug>(fern-action-copy)
   nmap <buffer> s <Plug>(fern-action-open:split)
   nmap <buffer> v <Plug>(fern-action-open:vsplit)
   nmap <buffer> r <Plug>(fern-action-reload)
