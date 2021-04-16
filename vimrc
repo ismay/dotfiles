@@ -322,7 +322,9 @@ set statusline+=%f
 set statusline+=\ 
 
 " modified flag
-set statusline+=%{&modified?'':''}
+set statusline+=%1*
+set statusline+=%{&modified?'':''}
+set statusline+=%#<Statusline>#
 
 " right align from here on
 set statusline+=%=
