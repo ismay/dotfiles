@@ -205,7 +205,6 @@ nnoremap <leader>w :set wrap!<CR>
 " open/close Fern
 nnoremap <leader>d :Fern . -drawer -toggle<CR><C-w>=
 noremap <Leader>f :Fern . -drawer -reveal=%<CR><C-w>=
-noremap <Leader>. :Fern %:h -drawer<CR><C-w>=
 
 " fix file with available fixers
 nnoremap <leader>x :ALEFix<CR>
@@ -269,44 +268,22 @@ let g:clever_f_fix_key_direction = 1
 " Ripgrep
 let g:rg_command = 'rg --vimgrep --smart-case --fixed-strings'
 
-"Cheat 40
-let g:cheat40_use_default = 0
-
 " ==================================================================================================
 " Fern settings
 " ==================================================================================================
 
 let g:fern#renderer = 'nerdfont'
-let g:fern#disable_default_mappings = 1
 let g:fern#disable_drawer_smart_quit = 1
 let g:fern#drawer_width = 35
 
 function! s:init_fern() abort
-  nmap <buffer><expr>
-        \ <Plug>(fern-my-open-expand-collapse)
-        \ fern#smart#leaf(
-        \   "\<Plug>(fern-action-open:select)",
-        \   "\<Plug>(fern-action-expand)",
-        \   "\<Plug>(fern-action-collapse)",
-        \ )
-  nmap <buffer> l <Plug>(fern-my-open-expand-collapse)
+  nmap <buffer> l <Plug>(fern-action-open-or-expand)
   nmap <buffer> h <Plug>(fern-action-collapse)
-  nmap <buffer> m <Plug>(fern-action-mark:toggle)
-  nmap <buffer> n <Plug>(fern-action-new-file)
-  nmap <buffer> f <Plug>(fern-action-new-dir)
-  nmap <buffer> R <Plug>(fern-action-rename)
-  nmap <buffer> D <Plug>(fern-action-remove)
-  nmap <buffer> x <Plug>(fern-action-move)
-  nmap <buffer> c <Plug>(fern-action-copy)
   nmap <buffer> s <Plug>(fern-action-open:split)
   nmap <buffer> v <Plug>(fern-action-open:vsplit)
-  nmap <buffer> r <Plug>(fern-action-reload)
-  nmap <buffer> <nowait> ! <Plug>(fern-action-hidden:toggle)
-  nmap <buffer> <nowait> < <Plug>(fern-action-leave)
-  nmap <buffer> <nowait> > <Plug>(fern-action-enter)
 endfunction
 
-augroup fern-custom
+augroup fern
   autocmd! *
   " Set nerdfont icon colors automatically
   autocmd FileType fern call glyph_palette#apply()
