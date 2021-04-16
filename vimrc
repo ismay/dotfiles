@@ -267,7 +267,7 @@ let g:clever_f_across_no_line = 1
 let g:clever_f_fix_key_direction = 1
 
 "Vim ripgrep
-let g:rg_command = 'rg --vimgrep -SF'
+let g:rg_command = 'rg --vimgrep --smart-case --fixed-strings'
 
 " ==================================================================================================
 " Fern settings

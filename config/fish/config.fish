@@ -31,7 +31,7 @@ alias n="npm"
 alias p="cd ~/Projects"
 alias v="vim"
 alias y="yarn"
-alias r="rg -SF"
+alias r="rg --smart-case --fixed-strings"
 
 # serve local directory
 alias serve="python -m SimpleHTTPServer 8000"
