@@ -68,4 +68,4 @@ highlight StatusLineNC      ctermfg=7     ctermbg=8     cterm=none
 highlight VertSplit         ctermfg=7     ctermbg=8     cterm=none
 highlight SignColumn                      ctermbg=8
 " Used in the statusline as a warning color
-highlight User1             ctermfg=1     ctermbg=8
+highlight User1             ctermfg=9     ctermbg=8
