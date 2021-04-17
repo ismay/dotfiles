@@ -20,6 +20,7 @@
 - Using a single theme for all terminal utilities: https://jeffkreeftmeijer.com/vim-16-color
 - Programming font gallery: https://www.programmingfonts.org
 - Managing dotfiles: https://github.com/thoughtbot/rcm
+- Icons cheat sheet: https://www.nerdfonts.com/cheat-sheet
 - Repository manager: https://myrepos.branchable.com
 - Terminal emulator: https://sw.kovidgoyal.net/kitty
 - Navigation: https://github.com/ajeetdsouza/zoxide
