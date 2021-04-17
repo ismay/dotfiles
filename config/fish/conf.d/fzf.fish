@@ -17,5 +17,5 @@ set -x FZF_DEFAULT_OPTS "
 # set command for fzf in vim
 set -x FZF_DEFAULT_COMMAND 'fd --type f --color=never'
 
-# bind fuzzy file/directory insertion to ctrl-t
-bind \ct fzf_insert
+# bind fuzzy file/directory insertion to ctrl-f
+bind \cf fzf_insert
