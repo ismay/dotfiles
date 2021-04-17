@@ -4,7 +4,7 @@
 
 > https://www.youtube.com/watch?v=DNLB7bFA_U4
 
-![screenshot](https://user-images.githubusercontent.com/7355199/115064914-c7b68f00-9eed-11eb-8c99-a359c246bb92.png)
+![screenshot](https://user-images.githubusercontent.com/7355199/115106617-20c20980-9f66-11eb-89c7-f71516501865.png)
 
 ## installation
 
