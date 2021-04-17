@@ -4,3 +4,8 @@ add_newline = false
 # Fix node space
 [nodejs]
 format = "via [⬢  $version](bold green) "
+
+# Custom prompt character
+[character]
+success_symbol = "[](green)"
+error_symbol = "[](red)"
