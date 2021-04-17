@@ -299,7 +299,7 @@ augroup END
 " ==================================================================================================
 
 set statusline=
-set statusline+=\ \ 
+set statusline+=\ \ \ 
 
 " file name
 set statusline+=%f
@@ -320,6 +320,6 @@ set statusline+=:
 set statusline+=%c
 
 " current percentage of file
-set statusline+=\ \ \ 
+set statusline+=\ \ \ \ 
 set statusline+=%p%%
 set statusline+=\ 
