@@ -302,24 +302,27 @@ augroup END
 set statusline=
 
 " file name
-set statusline+=\ 
+set statusline+=\ \ \ 
 set statusline+=%f
 set statusline+=\ 
 
 " modified flag
 set statusline+=%1*
-set statusline+=%{&modified?'':''}
+set statusline+=%{&modified?'':''}
 set statusline+=%#<Statusline>#
 
 " right align from here on
 set statusline+=%=
 
-" current line and column
+" current line
+set statusline+=\ \ 
 set statusline+=%l
-set statusline+=:
+
+" current column
+set statusline+=\ \ \ 
 set statusline+=%c
 
 " current percentage of file
-set statusline+=\ \ 
+set statusline+=\ \ \ 
 set statusline+=%p%%
 set statusline+=\ 
