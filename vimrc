@@ -299,9 +299,9 @@ augroup END
 " ==================================================================================================
 
 set statusline=
-set statusline+=\ \ \ 
 
 " file name
+set statusline+=\ 
 set statusline+=%f
 set statusline+=\ 
 
@@ -314,12 +314,11 @@ set statusline+=%#<Statusline>#
 set statusline+=%=
 
 " current line and column
-set statusline+=\ \ \ 
 set statusline+=%l
 set statusline+=:
 set statusline+=%c
 
 " current percentage of file
-set statusline+=\ \ \ \ 
+set statusline+=\ \ 
 set statusline+=%p%%
 set statusline+=\ 
