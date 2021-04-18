@@ -272,6 +272,9 @@ let g:clever_f_fix_key_direction = 1
 " Ripgrep
 let g:rg_command = 'rg --vimgrep --smart-case --fixed-strings'
 
+" Alias lowercase rg to capitalized Rg
+cabbrev rg Rg
+
 " ==================================================================================================
 " Fern settings
 " ==================================================================================================
