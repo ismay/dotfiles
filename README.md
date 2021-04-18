@@ -1,9 +1,5 @@
 # dotfiles
 
-> "His gui is mindblowing.. [moves windows around a little] This system is insane, it's completely BSD based! Open source programming.. You don't see this in personal systems. I mean, outside of like San Francisco."
-
-> https://www.youtube.com/watch?v=DNLB7bFA_U4
-
 ![screenshot](https://user-images.githubusercontent.com/7355199/115135254-64c11700-a017-11eb-8ffd-75462e432ea0.png)
 
 ## installation
