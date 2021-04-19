@@ -158,6 +158,10 @@ set whichwrap+=h,l
 " show as much as possible of the last line
 set display+=lastline
 
+" change cursor based on mode
+let &t_SI = "\<Esc>[6 q"
+let &t_EI = "\<Esc>[2 q"
+
 " ==================================================================================================
 " Keys
 " ==================================================================================================
