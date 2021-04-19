@@ -68,5 +68,7 @@ highlight StatusLineNC      ctermfg=7     ctermbg=8     cterm=NONE
 highlight VertSplit         ctermfg=7     ctermbg=8     cterm=NONE
 highlight SignColumn                      ctermbg=8
 highlight FernGitStatusBracket            ctermfg=8     cterm=NONE
+highlight FernGitStatusIgnored            ctermfg=8     cterm=NONE
+
 " Used in the statusline as a warning color
 highlight User1             ctermfg=9     ctermbg=8
