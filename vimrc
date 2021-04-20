@@ -158,9 +158,15 @@ set whichwrap+=h,l
 " show as much as possible of the last line
 set display+=lastline
 
+" ms delay before swap file is written
+set updatetime=100
+
 " change cursor based on mode
 let &t_SI = "\<Esc>[6 q"
 let &t_EI = "\<Esc>[2 q"
+
+" always show signcolumn
+set signcolumn=yes
 
 " ==================================================================================================
 " Keys
@@ -234,10 +240,6 @@ let g:fzf_action={
 let g:fzf_layout={ 'down': '~20%' }
 
 " Ale
-let g:ale_set_highlights=0
-let g:ale_sign_column_always=1
-let g:ale_sign_error='>>'
-let g:ale_sign_warning='--'
 let g:ale_fixers = {
 \ 'css': ['stylelint', 'prettier'],
 \ 'javascript': ['eslint', 'prettier'],
@@ -258,12 +260,6 @@ let g:mucomplete#buffer_relative_paths=1
 let g:mucomplete#enable_auto_at_startup=1
 
 " Gitgutter
-let g:gitgutter_override_sign_column_highlight = 0
-let g:gitgutter_sign_added = '++'
-let g:gitgutter_sign_modified = 'cc'
-let g:gitgutter_sign_removed = '--'
-let g:gitgutter_sign_removed_first_line = '^^'
-let g:gitgutter_sign_modified_removed = 'c-'
 let g:gitgutter_grep = 'rg'
 
 " Indentline
