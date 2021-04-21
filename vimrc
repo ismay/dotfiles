@@ -214,7 +214,7 @@ nnoremap <leader>w :set wrap!<CR>
 
 " open/close Fern
 nnoremap <leader>d :Fern . -drawer -toggle<CR><C-w>=
-noremap <Leader>f :Fern . -drawer -reveal=%<CR><C-w>=
+nnoremap <Leader>f :Fern . -drawer -reveal=%<CR><C-w>=
 
 " fix file with available fixers
 nnoremap <leader>x :ALEFix<CR>
@@ -224,6 +224,9 @@ nnoremap <C-f> :FZF<CR>
 
 " copy to end of line
 nnoremap Y yg_
+
+" reload vim config
+nnoremap <Leader>q :source $MYVIMRC<CR>
 
 " ==================================================================================================
 " Plugin settings
