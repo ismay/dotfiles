@@ -1,28 +1,28 @@
 #!/usr/bin/env fish
 
 function kitty_to_xresources --description "Convert kitty to xresources theme"
-  # Extract colors from kitty format
-  set -l col_bg (printf '%s\n' $argv | grep '^background ' | cut -d'#' -f2-)
-  set -l col_fg (printf '%s\n' $argv | grep '^foreground ' | cut -d'#' -f2-)
-  set -l col_00 (printf '%s\n' $argv | grep '^color0 ' | cut -d'#' -f2-)
-  set -l col_01 (printf '%s\n' $argv | grep '^color1 ' | cut -d'#' -f2-)
-  set -l col_02 (printf '%s\n' $argv | grep '^color2 ' | cut -d'#' -f2-)
-  set -l col_03 (printf '%s\n' $argv | grep '^color3 ' | cut -d'#' -f2-)
-  set -l col_04 (printf '%s\n' $argv | grep '^color4 ' | cut -d'#' -f2-)
-  set -l col_05 (printf '%s\n' $argv | grep '^color5 ' | cut -d'#' -f2-)
-  set -l col_06 (printf '%s\n' $argv | grep '^color6 ' | cut -d'#' -f2-)
-  set -l col_07 (printf '%s\n' $argv | grep '^color7 ' | cut -d'#' -f2-)
-  set -l col_08 (printf '%s\n' $argv | grep '^color8 ' | cut -d'#' -f2-)
-  set -l col_09 (printf '%s\n' $argv | grep '^color9 ' | cut -d'#' -f2-)
-  set -l col_10 (printf '%s\n' $argv | grep '^color10 ' | cut -d'#' -f2-)
-  set -l col_11 (printf '%s\n' $argv | grep '^color11 ' | cut -d'#' -f2-)
-  set -l col_12 (printf '%s\n' $argv | grep '^color12 ' | cut -d'#' -f2-)
-  set -l col_13 (printf '%s\n' $argv | grep '^color13 ' | cut -d'#' -f2-)
-  set -l col_14 (printf '%s\n' $argv | grep '^color14 ' | cut -d'#' -f2-)
-  set -l col_15 (printf '%s\n' $argv | grep '^color15 ' | cut -d'#' -f2-)
+    # Extract colors from kitty format
+    set -l col_bg (printf '%s\n' $argv | grep '^background ' | cut -d'#' -f2-)
+    set -l col_fg (printf '%s\n' $argv | grep '^foreground ' | cut -d'#' -f2-)
+    set -l col_00 (printf '%s\n' $argv | grep '^color0 ' | cut -d'#' -f2-)
+    set -l col_01 (printf '%s\n' $argv | grep '^color1 ' | cut -d'#' -f2-)
+    set -l col_02 (printf '%s\n' $argv | grep '^color2 ' | cut -d'#' -f2-)
+    set -l col_03 (printf '%s\n' $argv | grep '^color3 ' | cut -d'#' -f2-)
+    set -l col_04 (printf '%s\n' $argv | grep '^color4 ' | cut -d'#' -f2-)
+    set -l col_05 (printf '%s\n' $argv | grep '^color5 ' | cut -d'#' -f2-)
+    set -l col_06 (printf '%s\n' $argv | grep '^color6 ' | cut -d'#' -f2-)
+    set -l col_07 (printf '%s\n' $argv | grep '^color7 ' | cut -d'#' -f2-)
+    set -l col_08 (printf '%s\n' $argv | grep '^color8 ' | cut -d'#' -f2-)
+    set -l col_09 (printf '%s\n' $argv | grep '^color9 ' | cut -d'#' -f2-)
+    set -l col_10 (printf '%s\n' $argv | grep '^color10 ' | cut -d'#' -f2-)
+    set -l col_11 (printf '%s\n' $argv | grep '^color11 ' | cut -d'#' -f2-)
+    set -l col_12 (printf '%s\n' $argv | grep '^color12 ' | cut -d'#' -f2-)
+    set -l col_13 (printf '%s\n' $argv | grep '^color13 ' | cut -d'#' -f2-)
+    set -l col_14 (printf '%s\n' $argv | grep '^color14 ' | cut -d'#' -f2-)
+    set -l col_15 (printf '%s\n' $argv | grep '^color15 ' | cut -d'#' -f2-)
 
-  # Print to xresources format
-  printf "%s\n" \
+    # Print to xresources format
+    printf "%s\n" \
     "*.foreground:   #$col_fg"\
     "*.background:   #$col_bg"\
     "*.color0:       #$col_00"\
@@ -44,11 +44,11 @@ function kitty_to_xresources --description "Convert kitty to xresources theme"
 end
 
 for theme_path in (status dirname)/import/*.conf
-  set -l theme_contents (cat $theme_path)
-  set -l theme_name (basename $theme_path .conf)
-  set -l theme_destination (status dirname)/originals/{$theme_name}.xresources
+    set -l theme_contents (cat $theme_path)
+    set -l theme_name (basename $theme_path .conf)
+    set -l theme_destination (status dirname)/originals/{$theme_name}.xresources
 
-  echo Importing $theme_name
+    echo Importing $theme_name
 
-  printf '%s\n' (kitty_to_xresources $theme_contents) > $theme_destination
+    printf '%s\n' (kitty_to_xresources $theme_contents) >$theme_destination
 end
