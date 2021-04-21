@@ -38,11 +38,11 @@ highlight CursorLine                                    cterm=NONE
 highlight MatchParen        ctermfg=7     ctermbg=8
 highlight Constant          ctermfg=1
 highlight Special           ctermfg=5
-highlight Identifier        ctermfg=6                   cterm=NONE 
+highlight Identifier        ctermfg=6                   cterm=NONE
 highlight Statement         ctermfg=3
 highlight PreProc           ctermfg=5
 highlight Type              ctermfg=2
-highlight Underlined        ctermfg=5                   cterm=underline 
+highlight Underlined        ctermfg=5                   cterm=underline
 highlight Ignore            ctermfg=15
 highlight Error             ctermfg=15    ctermbg=9
 highlight Todo              ctermfg=0     ctermbg=11
@@ -69,6 +69,7 @@ highlight VertSplit         ctermfg=7     ctermbg=8     cterm=NONE
 highlight SignColumn                      ctermbg=8
 highlight FernGitStatusBracket            ctermfg=8     cterm=NONE
 highlight FernGitStatusIgnored            ctermfg=8     cterm=NONE
+highlight FernGitStatusUntracked          ctermfg=8     cterm=NONE
 
 " Used in the statusline as a warning color
 highlight User1             ctermfg=9     ctermbg=8
