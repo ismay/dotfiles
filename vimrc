@@ -243,15 +243,13 @@ let g:fzf_layout={ 'down': '~20%' }
 let g:ale_fixers = {
 \ 'css': ['stylelint', 'prettier'],
 \ 'javascript': ['eslint', 'prettier'],
-\ 'javascriptreact': ['eslint', 'prettier'],
 \ 'json': ['prettier'],
+\ 'markdown': ['prettier'],
 \ 'yml': ['prettier'],
 \ 'go': ['gofmt'],
-\}
-let g:ale_linters = {
-\ 'css': ['stylelint'],
-\ 'javascript': ['eslint'],
-\ 'javascriptreact': ['eslint'],
+\ 'sh': ['shfmt'],
+\ 'fish': ['fish_indent'],
+\ '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
 
 " Mucomplete
@@ -304,9 +302,11 @@ augroup END
 
 set statusline=
 
-" file name
+" file name and filetype
 set statusline+=\ \ \ 
 set statusline+=%f
+set statusline+=\ 
+set statusline+=%y 
 set statusline+=\ 
 
 " modified flag
