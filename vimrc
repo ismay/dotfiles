@@ -246,6 +246,9 @@ let g:fzf_layout={ 'down': '~20%' }
 let g:ale_fixers = {
 \ 'css': ['stylelint', 'prettier'],
 \ 'javascript': ['eslint', 'prettier'],
+\ 'javascriptreact': ['eslint', 'prettier'],
+\ 'typescript': ['eslint', 'prettier'],
+\ 'typescriptreact': ['eslint', 'prettier'],
 \ 'json': ['prettier'],
 \ 'markdown': ['prettier'],
 \ 'yml': ['prettier'],

@@ -66,8 +66,8 @@ highlight WarningMsg        ctermfg=1
 highlight WildMenu          ctermfg=0     ctermbg=11
 
 " Ale
-highlight ALEError          ctermfg=NONE  ctermbg=NONE  cterm=underline
-highlight ALEWarning        ctermfg=NONE  ctermbg=NONE  cterm=underline
+highlight ALEError          ctermfg=NONE  ctermbg=NONE  cterm=bold
+highlight ALEWarning        ctermfg=NONE  ctermbg=NONE  cterm=bold
 
 " Gitgutter
 highlight GitGutterAdd      ctermfg=2     ctermbg=8     cterm=bold
