@@ -15,74 +15,92 @@ let colors_name = "native"
 let &t_Cs = "\e[4:3m"
 let &t_Ce = "\e[4:0m"
 
-hi ColorColumn ctermfg=7 ctermbg=8
-hi Comment ctermfg=8 cterm=italic
-hi Conceal ctermfg=7 ctermbg=7
-hi Constant ctermfg=1
-hi CursorColumn ctermbg=7
+" From cterm-colors:
+" 0 Black
+" 1 DarkBlue
+" 2 DarkGreen
+" 3 DarkCyan
+" 4 DarkRed
+" 5 DarkMagenta
+" 6 Brown, DarkYellow
+" 7 LightGray, LightGrey, Gray, Grey
+" 8 DarkGray, DarkGrey
+" 9 Blue, LightBlue
+" 10 Green, LightGreen
+" 11 Cyan, LightCyan
+" 12 Red, LightRed
+" 13 Magenta, LightMagenta
+" 14 Yellow, LightYellow
+" 15 White
+
+hi ColorColumn ctermfg=gray ctermbg=darkgray
+hi Comment ctermfg=darkgray cterm=italic
+hi Conceal ctermfg=gray ctermbg=gray
+hi Constant ctermfg=darkblue
+hi CursorColumn ctermbg=gray
 hi CursorLine cterm=NONE
-hi CursorLineNr ctermfg=3 cterm=NONE
-hi DiffAdd ctermfg=0 ctermbg=2
-hi DiffChange ctermfg=0 ctermbg=3
-hi DiffDelete ctermfg=0 ctermbg=1
-hi DiffText ctermfg=0 ctermbg=11 cterm=bold
-hi Directory ctermfg=4
-hi Error ctermfg=15 ctermbg=9
-hi ErrorMsg ctermfg=15 ctermbg=1
-hi FoldColumn ctermfg=7 ctermbg=8
-hi Folded ctermfg=7 ctermbg=8
-hi Identifier ctermfg=6 cterm=NONE
-hi Ignore ctermfg=15
+hi CursorLineNr ctermfg=darkcyan cterm=NONE
+hi DiffAdd ctermfg=black ctermbg=darkgreen
+hi DiffChange ctermfg=black ctermbg=darkcyan
+hi DiffDelete ctermfg=black ctermbg=darkblue
+hi DiffText ctermfg=black ctermbg=cyan cterm=bold
+hi Directory ctermfg=darkred
+hi Error ctermfg=white ctermbg=blue
+hi ErrorMsg ctermfg=white ctermbg=darkblue
+hi FoldColumn ctermfg=gray ctermbg=darkgray
+hi Folded ctermfg=gray ctermbg=darkgray
+hi Identifier ctermfg=brown cterm=NONE
+hi Ignore ctermfg=white
 hi IncSearch cterm=inverse
-hi LineNr ctermfg=8
-hi MatchParen ctermfg=7 ctermbg=8
+hi LineNr ctermfg=darkgray
+hi MatchParen ctermfg=gray ctermbg=darkgray
 hi ModeMsg cterm=bold
-hi MoreMsg ctermfg=2
-hi NonText ctermfg=12
-hi Pmenu ctermfg=15 ctermbg=8
-hi PmenuSbar ctermbg=8
-hi PmenuSel ctermfg=8 ctermbg=15
-hi PmenuThumb ctermbg=0
-hi PreProc ctermfg=5
-hi Question ctermfg=2
-hi Search ctermfg=0 ctermbg=11
-hi SignColumn ctermbg=8
-hi Special ctermfg=5
-hi SpecialKey ctermfg=4
-hi SpellBad ctermbg=2
-hi SpellCap ctermfg=7 ctermbg=8
-hi SpellLocal ctermbg=14
-hi SpellRare ctermbg=5
-hi Statement ctermfg=3
-hi StatusLine ctermfg=15 ctermbg=8 cterm=bold
-hi StatusLineNC ctermfg=7 ctermbg=8 cterm=NONE
-hi TabLine ctermfg=0 ctermbg=7 cterm=underline
+hi MoreMsg ctermfg=darkgreen
+hi NonText ctermfg=red
+hi Pmenu ctermfg=white ctermbg=darkgray
+hi PmenuSbar ctermbg=darkgray
+hi PmenuSel ctermfg=darkgray ctermbg=white
+hi PmenuThumb ctermbg=black
+hi PreProc ctermfg=darkmagenta
+hi Question ctermfg=darkgreen
+hi Search ctermfg=black ctermbg=cyan
+hi SignColumn ctermbg=darkgray
+hi Special ctermfg=darkmagenta
+hi SpecialKey ctermfg=darkred
+hi SpellBad ctermbg=darkgreen
+hi SpellCap ctermfg=gray ctermbg=darkgray
+hi SpellLocal ctermbg=yellow
+hi SpellRare ctermbg=darkmagenta
+hi Statement ctermfg=darkcyan
+hi StatusLine ctermfg=white ctermbg=darkgray cterm=bold
+hi StatusLineNC ctermfg=gray ctermbg=darkgray cterm=NONE
+hi TabLine ctermfg=black ctermbg=gray cterm=underline
 hi TabLineFill cterm=inverse
 hi TabLineSel cterm=bold
 hi TermCursor cterm=inverse
-hi Title ctermfg=5
-hi Todo ctermfg=0 ctermbg=11
-hi Type ctermfg=2
-hi Underlined ctermfg=5 cterm=underline
-hi VertSplit ctermfg=7 ctermbg=8 cterm=NONE
+hi Title ctermfg=darkmagenta
+hi Todo ctermfg=black ctermbg=cyan
+hi Type ctermfg=darkgreen
+hi Underlined ctermfg=darkmagenta cterm=underline
+hi VertSplit ctermfg=gray ctermbg=darkgray cterm=NONE
 hi Visual ctermfg=NONE ctermbg=NONE cterm=inverse
-hi WarningMsg ctermfg=1
-hi WildMenu ctermfg=0 ctermbg=11
+hi WarningMsg ctermfg=darkblue
+hi WildMenu ctermfg=black ctermbg=cyan
 
 " Ale
 hi ALEError cterm=undercurl ctermul=red
 hi ALEWarning cterm=undercurl ctermul=yellow
 
 " Gitgutter
-hi GitGutterAdd ctermfg=2 ctermbg=8 cterm=bold
-hi GitGutterChange ctermfg=3 ctermbg=8 cterm=bold
-hi GitGutterDelete ctermfg=1 ctermbg=8 cterm=bold
+hi GitGutterAdd ctermfg=darkgreen ctermbg=darkgray cterm=bold
+hi GitGutterChange ctermfg=darkcyan ctermbg=darkgray cterm=bold
+hi GitGutterDelete ctermfg=darkblue ctermbg=darkgray cterm=bold
 
 "Fern
-hi FernGitStatusBracket ctermfg=8 cterm=NONE
-hi FernGitStatusIgnored ctermfg=8 cterm=NONE
-hi FernGitStatusUntracked ctermfg=8 cterm=NONE
-hi FernMarkedText ctermfg=13 ctermbg=8
+hi FernGitStatusBracket ctermfg=darkgray cterm=NONE
+hi FernGitStatusIgnored ctermfg=darkgray cterm=NONE
+hi FernGitStatusUntracked ctermfg=darkgray cterm=NONE
+hi FernMarkedText ctermfg=magenta ctermbg=darkgray
 
 " Used in the statusline as a warning color
-hi User1 ctermfg=9 ctermbg=8
+hi User1 ctermfg=blue ctermbg=darkgray
