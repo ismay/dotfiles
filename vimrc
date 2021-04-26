@@ -257,6 +257,7 @@ let g:ale_fixers = {
 \ 'fish': ['fish_indent'],
 \ '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
+let g:ale_set_highlights = 0
 
 " Mucomplete
 let g:mucomplete#chains={ 'default' : ['path', 'c-n', 'uspl', 'incl'] }
