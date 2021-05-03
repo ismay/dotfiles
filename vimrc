@@ -204,7 +204,7 @@ nnoremap <silent> <Leader>* :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hl
 nnoremap <leader>c :nohlsearch<CR>
 
 " select all
-nnoremap <leader>v ggVG
+nnoremap <leader>a ggVG
 
 " copy all
 nnoremap <leader>y :%y<CR>
@@ -227,6 +227,18 @@ nnoremap Y yg_
 
 " reload vim config
 nnoremap <Leader>q :source $MYVIMRC<CR>
+
+" new buffer
+nnoremap <leader>s :new<CR>
+
+" new split
+nnoremap <leader>S :split<CR>
+
+" new vertical buffer
+nnoremap <leader>v :vnew<CR>
+
+" new vertical split
+nnoremap <leader>V :vsplit<CR>
 
 " ==================================================================================================
 " Plugin settings
