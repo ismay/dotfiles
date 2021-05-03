@@ -213,8 +213,8 @@ nnoremap <leader>y :%y<CR>
 nnoremap <leader>w :set wrap!<CR>
 
 " open/close Fern
-nnoremap <leader>d :Fern . -drawer -toggle<CR><C-w>=
-nnoremap <Leader>f :Fern . -drawer -reveal=%<CR><C-w>=
+nnoremap <leader>d :Fern .<CR>
+nnoremap <Leader>f :Fern . -reveal=%<CR>
 
 " fix file with available fixers
 nnoremap <leader>x :ALEFix<CR>
