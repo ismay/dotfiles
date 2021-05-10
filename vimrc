@@ -301,6 +301,11 @@ let g:fern#disable_drawer_smart_quit = 1
 let g:fern#drawer_width = 35
 let g:fern#renderer#nerdfont#padding = '  '
 
+" https://github.com/lambdalisue/fern.vim/issues/233
+let hide_dirs  = '^\%(\.git\|node_modules\)$'
+let hide_files = '\%(\.DS_Store\)\+'
+let g:fern#default_exclude = hide_dirs . '\|' . hide_files
+
 function! s:init_fern() abort
   nmap <buffer> l <Plug>(fern-action-open-or-expand)
   nmap <buffer> h <Plug>(fern-action-collapse)
