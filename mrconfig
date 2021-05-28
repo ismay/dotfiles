@@ -6,8 +6,8 @@ checkout = git clone 'git@github.com:ismay/stylelint-no-unsupported-browser-feat
 [Projects/github/ismay/dotfiles]
 checkout = git clone 'git@github.com:ismay/dotfiles.git' 'dotfiles'
 
-[Projects/github/ismay/superwolff.nl]
-checkout = git clone 'git@github.com:ismay/superwolff.nl.git' 'superwolff.nl'
+[Projects/github/ismay/superwolff]
+checkout = git clone 'git@github.com:ismay/superwolff.git' 'superwolff'
 
 [Projects/github/ismay/wolffsoftwareengineering.nl]
 checkout = git clone 'git@github.com:ismay/wolffsoftwareengineering.nl.git' 'wolffsoftwareengineering.nl'
