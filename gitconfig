@@ -29,7 +29,7 @@
   f = fetch
   l = pull
   lg = log --stat
-  p = push
+  p = ![[ $(git config "branch.$(git symbolic-ref --short HEAD).merge") = '' ]] && git push -u || git push
   pf = push --force-with-lease
   rb = rebase
   rba = rebase --abort
