@@ -311,6 +311,8 @@ function! s:init_fern() abort
   nmap <buffer> h <Plug>(fern-action-collapse)
   nmap <buffer> s <Plug>(fern-action-open:split)
   nmap <buffer> v <Plug>(fern-action-open:vsplit)
+  nmap <buffer> < <Plug>(fern-action-leave)
+  nmap <buffer> > <Plug>(fern-action-enter)
 endfunction
 
 augroup fern
