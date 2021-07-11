@@ -9,8 +9,8 @@ checkout = git clone 'git@github.com:ismay/dotfiles.git' 'dotfiles'
 [Projects/github/ismay/superwolff]
 checkout = git clone 'git@github.com:ismay/superwolff.git' 'superwolff'
 
-[Projects/github/ismay/wolffsoftwareengineering.nl]
-checkout = git clone 'git@github.com:ismay/wolffsoftwareengineering.nl.git' 'wolffsoftwareengineering.nl'
+[Projects/github/ismay/wolffsoftwareengineering]
+checkout = git clone 'git@github.com:ismay/wolffsoftwareengineering.git' 'wolffsoftwareengineering'
 
 # Go tooling
 
